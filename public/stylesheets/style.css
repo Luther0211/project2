@@ -1,0 +1,149 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif; }
+
+/*bulma*/
+.hero.is-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/joan.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.hero .subtitle {
+  padding: 3rem 0;
+  line-height: 1.5; }
+
+/*menu lateral*/
+div#barra-lateral {
+  position: fixed;
+  width: 1px;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: width 0.5s cubic-bezier(0.61, 0.01, 0.37, 1); }
+
+div#barra-lateral:hover {
+  width: 200px; }
+
+.text-decoration {
+  text-decoration: none;
+  color: white; }
+
+.inicio {
+  position: absolute;
+  top: 8vh;
+  left: 1vw; }
+
+.generos {
+  position: absolute;
+  top: 19vh;
+  left: 1vw; }
+
+.galeria {
+  position: absolute;
+  top: 37vh;
+  left: 1vw; }
+
+.ingresa {
+  position: absolute;
+  top: 49vh;
+  left: 1vw; }
+
+.registro {
+  position: absolute;
+  top: 60vh;
+  left: 1vw; }
+
+.contacto {
+  position: absolute;
+  top: 77vh;
+  left: 1vw; }
+
+.nosotros {
+  position: absolute;
+  top: 89vh;
+  left: 1vw; }
+
+div img {
+  height: 100vh;
+  width: 19vh; }
+
+.nav-text {
+  position: absolute;
+  font-size: 24px;
+  color: red; }
+
+.medio {
+  top: 120px; }
+
+.hearts {
+  margin-left: 10%; }
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  display: inline-block; }
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #eee;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%; }
+
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%; }
+
+.rating {
+  width: 90%;
+  background-color: #ddd; }
+
+.on:before, .on:after {
+  background: red; }
+
+p {
+  font-family: Arial;
+  font-size: 36px;
+  color: #aaa;
+  margin: 4%;
+  padding-top: 1%; }
+
+/*# sourceMappingURL=style.css.map */

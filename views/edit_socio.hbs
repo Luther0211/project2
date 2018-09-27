@@ -1,0 +1,75 @@
+<h1>EDITA TU PERFIL</h1>
+
+<form action="/edit/{{_id}}" method="post">
+
+<p>
+  <label for="username">Nombre de Usuario</label>
+  <input type="text" name="username" id="{{username}}" value="{{username}}">
+</p>
+
+<p>
+  <label for="email">Correo electronico</label>
+  <input type="email" name="email" id="{{email}}" value="{{email}}">
+</p>
+
+{{#if password}}
+  <p>
+    <label for="password">Contrasena</label>
+    <input type="password" name="password" id="password">
+  </p>
+{{/if}}
+
+<div id="form">
+
+  <p>
+    <label for="nombreGrupal">Nombre del grupo musical</label>
+    <input type="text" name="nombreGrupal" id="nombreGrupal" value="{{nombreGrupal}}">
+  </p>
+
+  <p>
+    <label for="generoMusical">Genero musical</label>
+    <select name="generoMusical" id="generoMusical" value="{{generoMusical}}">
+      <option value="Pop">Pop</option>
+      <option value="Rock">Rock</option>
+      <option value="Clasica">Clasica</option>
+      <option value="nortena">Nortena</option>
+      <option value="otra">Otra</option>
+    </select>
+  </p> 
+
+
+  <p>
+    <label for="TipoEvento">Tamano de Evento</label>
+    <select name="TipoEvento" id="TipoEvento" value="{{TipoEvento}}">
+      <option value="Evento-chico">Evento chico</option>
+      <option value="Evento-mediano">Evento mediano</option>
+      <option value="Evento-grande">Evento grande</option>
+      <option value="Evento-todo">Todo tipo de envento</option>
+    </select>
+  </p> 
+
+<!--
+  <p> 
+    <form name="TipoEvento" id="TipoEvento">
+      <input type="radio" name="Evento-chico" value="Evento-chico" checked >Evento chico<br>
+      <input type="radio" name="Evento-mediano" value="Evento-mediano">Evento mediano<br>
+      <input type="radio" name="Evento-grande" value="Evento-grande">Evento grande<br>
+    </form>
+  </p>
+-->
+  <p>
+    <label for="CostoMXN">Costo por hora: $MXN</label>
+    <input type="text" name="CostoMXN" id="CostoMXN" value="{{CostoMXN}}">
+  </p>
+
+  <p>
+  <label for="Telefono">Telefono</label>
+  <input type="text" name="Telefono" id="{{Telefono}}" value="{{Telefono}}">
+</p>
+
+</div>
+
+<input type="submit" value="Editar perfil">
+
+</form>
+

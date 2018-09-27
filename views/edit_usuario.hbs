@@ -1,0 +1,68 @@
+<h1>EDITA TU PERFIL</h1>
+
+<form action="/edit/socio/{{_id}}" method="post">
+
+<p>
+  <label for="username">Nombre de Usuario</label>
+  <input type="text" name="username" id="{{username}}" value="{{username}}">
+</p>
+
+<p>
+  <label for="email">Correo electronico</label>
+  <input type="email" name="email" id="{{email}}" value="{{email}}">
+</p>
+
+{{#if password}}
+  <p>
+    <label for="password">Contrasena</label>
+    <input type="password" name="password" id="password">
+  </p>
+{{/if}}
+
+
+<!--intento usar el metodo onselect()-->
+<!--
+<p>
+  <label for="type">Tipo de Usuario</label>
+  <select name="type">
+    <option value="MEXAUSUARIO" id="MEXA-USUARIO">MEXA-USUARIO</option>
+    <option value="MEXASOCIO" id="MEXA-SOCIO">MEXA-SOCIO</option>
+  </select>
+</p>
+
+<div id="form">
+
+  <p>
+    <label for="nombreGrupo">Nombre del grupo musical</label>
+    <input type="text" name="nombreGrupo" id="nombreGrupo">
+  </p>
+
+  <p>
+    <label for="generoMusical">Nombre del grupo musical</label>
+    <select name="generoMusical" id="generoMusical">
+      <option value="Pop">Pop</option>
+      <option value="Rock">Rock</option>
+      <option value="Clasica">Clasica</option>
+      <option value="nortena">Nortena</option>
+      <option value="otra">Otra</option>
+    </select>
+  </p> 
+
+
+
+</div>
+-->
+
+<!--
+<script>  
+  document.getElementById('MEXA-SOCIO').onselect = function() {myFunction()};
+  function myFunction() {
+    console.log('prueba')
+    document.getElementById('form').innerHTML = "form"
+  }
+</script>
+
+<input type="submit" value="Editar perfil">
+-->
+</form>
+
