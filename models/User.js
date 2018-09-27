@@ -7,24 +7,10 @@ const userSchema = new Schema ({
   username: String,
   email: String,
   photoURL: String,
-  nombreGrupal: String,
-  Telefono: String,
-  generoMusical: String,
-  TipoEvento: String,
-  CostoMXN: String,
   notas: [{
     type: Schema.Types.ObjectId,
     ref: 'Nota'
   }],
-  type:{
-    type:String,
-    enum:['MEXAUSUARIO', 'MEXASOCIO'],
-    default: 'MEXAUSUARIO'
-  },/*
-  MEXASOCIO: {
-    type:Boolean,
-    default:false
-  },*/
 },{
   timestamps: {
     createdAt: 'created_at',

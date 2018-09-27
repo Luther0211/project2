@@ -3,13 +3,8 @@
 <form action="/create_new" method="post" enctype="multipart/form-data">
 
 <p>
-  <label for="title">Title</label>
-  <input type="text" name="title" id="title">
-</p>
-
-<p>
-  <label for="body">Body</label>
-  <textarea name="body" id="body" cols="30" rows="10"></textarea>
+  <label for="nombreGrupal">Nombre del grupo musical</label>
+  <input type="text" name="nombreGrupal" id="nombreGrupal" value="{{nombreGrupal}}">
 </p>
 
 <p>
@@ -17,6 +12,49 @@
   <input type="file" name="photo" id="photo">
 </p>
 
+<p>
+  <label for="body">Body</label>
+  <textarea name="body" id="body" cols="30" rows="10"></textarea>
+</p>
+
+
+<div id="form">
+  <p>
+    <label for="generoMusical">Genero musical</label>
+    <select name="generoMusical" id="generoMusical" value="{{generoMusical}}">
+      <option value="Pop">Pop</option>
+      <option value="Rock">Rock</option>
+      <option value="Clasica">Clasica</option>
+      <option value="nortena">Nortena</option>
+      <option value="otra">Otra</option>
+    </select>
+  </p> 
+
+  <p>
+    <label for="TipoEvento">Tamano de Evento</label>
+    <select name="TipoEvento" id="TipoEvento" value="{{TipoEvento}}">
+      <option value="Evento-chico">Evento chico</option>
+      <option value="Evento-mediano">Evento mediano</option>
+      <option value="Evento-grande">Evento grande</option>
+      <option value="Evento-todo">Todo tipo de envento</option>
+    </select>
+  </p> 
+
+  <p>
+    <label for="CostoMXN">Costo por hora: $MXN</label>
+    <input type="text" name="CostoMXN" id="CostoMXN" value="{{CostoMXN}}">
+  </p>
+
+  <p>
+  <label for="Telefono">Telefono</label>
+  <input type="text" name="Telefono" id="{{Telefono}}" value="{{Telefono}}">
+</p>
+
+
 <input type="submit" value="Crear notita">
+
+<button>
+    <a href="/profile">Cancel</a>
+</button>
 
 </form>

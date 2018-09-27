@@ -4,6 +4,11 @@ const notaSchema = new Schema({
   title: String,
   body: String,
   photo: String,
+  nombreGrupal: String,
+  Telefono: String,
+  generoMusical: String,
+  TipoEvento: String,
+  CostoMXN: String,
   author: {
     type: Schema.Types.ObjectId,
     ref:"User"

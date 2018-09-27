@@ -17,11 +17,17 @@
 
 <div>
   <h2>Notas ♫</h2>
-  <div>
+  <div class="noteCards">
     {{#each notas}}
-    <h2>{{title}}</h2>
-    <p>{{body}}</p>
+    <h2>Nombre: {{nombreGrupal}}</h2>
     <img src="{{photo}}" alt="photo">
+    <p>Descripcion:</p>
+    <p>{{body}}</p>
+    <span>Genero musical: {{generoMusical}}</span> <br>
+     <span>Tipo de evento: {{TipoEvento}}</span>  <br>
+     <span>Costo: {{CostoMXN}}</span> <br>
+     <span>Telefono: {{Telefono}}</span>
+    </p>
     {{/each}}
   </div>
 </div>

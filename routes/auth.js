@@ -67,11 +67,7 @@ router.get('/profile', isLogged, (req,res) => {
  ////***********--PROFILE-EDIT--***********////
 
  router.get('/edit/:id',  isLogged,(req,res) => {
-   if(req.user.type == 'MEXASOCIO'){
     res.render('edit_socio', req.app.locals.loggedUser)
-   }else{
-    res.render('edit_usuario', req.app.locals.loggedUser) 
-   }
 })
 
 router.post("/edit/:id", (req,res,next) => {
