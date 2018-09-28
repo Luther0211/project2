@@ -1,59 +1,81 @@
-<div id="barra-lateral">
-
-                <div class="nav-text">
-                    <div class="inicio">
-                            <a class="text-decoration" href="/">Inicio</a> 
-                    </div>
-                
-                    <div class="generos">
-                            <a class="text-decoration" href="/generos">Generos</a> 
-                    </div>
-                
-                    <div class="galeria">
-                            <a class="text-decoration" href="/galeria">Galeria</a> 
-                    </div>
-            
-                    <div class="ingresa">
-                            <a class="text-decoration" href="/login">Ingresa</a> 
-                    </div>
-            
-                    <div class="registro">
-                            <a class="text-decoration" href="/signup">Registro</a> 
-                    </div>
-            
-                    <div class="contacto">
-                            <a class="text-decoration" href="/contacto">Contacto</a> 
-                    </div>
-            
-                    <div class="nosotros">
-                        <a class="text-decoration" href="/nosotros">Nosotros</a> 
-                    </div>
-            
+<nav class="navbar is-fixed-top">
+        <div class="container">
+            <div class="navbar-brand">
+               
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active"  href="/generos?genre=Mariachi">
+                            Mariachi
+                        </a>
+                    <a class="navbar-item"  href="/generos?genre=Norteña">
+                            Norteño
+                        </a>
+                    <a class="navbar-item"  href="/generos?genre=Sonidero">
+                            Sonidero
+                        </a>
+                    <a class="navbar-item"  href="/generos?genre=Rock">
+                            Rock
+                        </a>
+                    <a class="navbar-item"  href="/generos?genre=Pop">
+                            Pop
+                        </a>
+                    <a class="navbar-item"  href="/generos?genre=Clasica">
+                            Clasica
+                        </a>
+                   
                 </div>
-                <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
-     </div>
+            </div>
+        </div>
+    </nav>
 
-<h1>GENEROS</h1>
-  
-<ul>
-  <a href="/generos?genre=Rock"><li>Rock</li></a>
-  <a href="/generos?genre=Pop"><li>Pop</li></a>
-  <a href="/generos?genre=Sonidero"><li>Sonidero</li></a>
-  <a href="/generos?genre=Mariachi"><li>Mariachi</li></a>
-  <a href="/generos?genre=Clasica"><li>Clasica</li></a>
-  <a href="/generos?genre=Norteña"><li>Norteña</li></a>
-</ul>
+    <br>
+    <br>
+    <br>
 
 
-{{#each notas}}
-  <div class="notasGenre">
-    <p>{{this.nombreGrupal}}</p>
-    <p> <img src="{{this.photo}}" alt=""></p>
-    <p>{{this.body}}</p>
-    <p>{{this.generoMusical}}</p>
-    <p>{{this.TipoEvento}}</p>
-    <p>{{this.Telefono}}</p>
-    <p>{{this.CostoMXN}}</p>
-  </div>
-{{/each}}
+<div class="center-form">
+  {{#each notas}}
+<div class="main-card-div2">
+    <div class="card-fix column is-one-third">
+                    <div class="card large">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="{{photo}}" alt="photo">
+                            </figure>
+                        </div>
 
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4 no-padding">Nombre: {{nombreGrupal}}</p>
+                                    <p class="title is-6">Genero Musical: {{generoMusical}}</p>
+                                    <p class="subtitle is-6">Tipo de Evento: {{TipoEvento}}</p>
+                                    <p class="subtitle is-6">Costo: {{CostoMXN}}</p>
+                                    <p class="subtitle is-6">Telefono: {{Telefono}}</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p>Descripcion:</p>
+                                {{body}}
+                                <div class="background-icon"><span class="icon-facebook"></span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+</div>
+            {{/each}}
+</div>
+
+<div class="space">
+
+</div>

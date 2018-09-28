@@ -102,8 +102,20 @@ p.subtitle {
   position: relative;
   padding-bottom: 800px; }
 
+.main-card-div2 {
+  padding-bottom: 800px; }
+
 .card-fix {
   position: absolute;
   left: 30vw; }
+
+.center-form {
+  padding-left: 500px; }
+
+.center-middle {
+  padding-left: 300px; }
+
+.space {
+  margin-bottom: 540px; }
 
 /*# sourceMappingURL=style.css.map */

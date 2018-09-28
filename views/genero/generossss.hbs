@@ -1,4 +1,4 @@
-        <div id="barra-lateral">
+<div id="barra-lateral">
 
                 <div class="nav-text">
                     <div class="inicio">
@@ -12,7 +12,7 @@
                     <div class="galeria">
                             <a class="text-decoration" href="/galeria">Galeria</a> 
                     </div>
-                {{#unless loggedUser}}
+            
                     <div class="ingresa">
                             <a class="text-decoration" href="/login">Ingresa</a> 
                     </div>
@@ -20,7 +20,7 @@
                     <div class="registro">
                             <a class="text-decoration" href="/signup">Registro</a> 
                     </div>
-                {{/unless}}
+            
                     <div class="contacto">
                             <a class="text-decoration" href="/contacto">Contacto</a> 
                     </div>
@@ -33,62 +33,27 @@
                 <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
      </div>
 
-<div class="center-form">
-        <h2>edit photo</h2>
+<h1>GENEROS</h1>
+  
+<ul>
+  <a href="/generos?genre=Rock"><li>Rock</li></a>
+  <a href="/generos?genre=Pop"><li>Pop</li></a>
+  <a href="/generos?genre=Sonidero"><li>Sonidero</li></a>
+  <a href="/generos?genre=Mariachi"><li>Mariachi</li></a>
+  <a href="/generos?genre=Clasica"><li>Clasica</li></a>
+  <a href="/generos?genre=Norteña"><li>Norteña</li></a>
+</ul>
 
-        <form action="/edit_image" method="post" enctype="multipart/form-data">
 
-        <input type="file" name="photoURL" >
-        <input type="submit" value="Sube tu foto">
-</div>
+{{#each notas}}
+  <div class="notasGenre">
+    <p>{{this.nombreGrupal}}</p>
+    <p> <img src="{{this.photo}}" alt=""></p>
+    <p>{{this.body}}</p>
+    <p>{{this.generoMusical}}</p>
+    <p>{{this.TipoEvento}}</p>
+    <p>{{this.Telefono}}</p>
+    <p>{{this.CostoMXN}}</p>
+  </div>
+{{/each}}
 
-</form>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>

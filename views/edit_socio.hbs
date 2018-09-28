@@ -1,23 +1,24 @@
 
+<div class="center-form">
+        <h1>EDITA TU PERFIL</h1>
 
-<h1>EDITA TU PERFIL</h1>
+        <form action="/edit/{{_id}}" method="post">
 
-<form action="/edit/{{_id}}" method="post">
+                <p>
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" name="username" id="{{username}}" value="{{username}}">
+                </p>
 
-        <p>
-        <label for="username">Nombre de Usuario</label>
-        <input type="text" name="username" id="{{username}}" value="{{username}}">
-        </p>
+                <p>
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="{{email}}" value="{{email}}">
+                </p>
 
-        <p>
-        <label for="email">Correo electronico</label>
-        <input type="email" name="email" id="{{email}}" value="{{email}}">
-        </p>
+                <input type="submit" value="Editar perfil">
 
-        <input type="submit" value="Editar perfil">
+                <button>
+                <a href="/profile">Cancel</a>
+                </button>
 
-        <button>
-        <a href="/profile">Cancel</a>
-        </button>
-
-</form>
+        </form>
+</div>
