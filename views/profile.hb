@@ -33,27 +33,45 @@
                 <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
      </div>
 
-<h1>GENEROS</h1>
-  
-<ul>
-  <a href="/generos?genre=Rock"><li>Rock</li></a>
-  <a href="/generos?genre=Pop"><li>Pop</li></a>
-  <a href="/generos?genre=Sonidero"><li>Sonidero</li></a>
-  <a href="/generos?genre=Mariachi"><li>Mariachi</li></a>
-  <a href="/generos?genre=Clasica"><li>Clasica</li></a>
-  <a href="/generos?genre=Norteña"><li>Norteña</li></a>
-</ul>
+<h2>Hola {{username}}!!</h2>
+<img src="{{photoURL}}" alt="profile picture" id="photo">
+
+<button> 
+  <a href="/login">Logout</a>
+</button>
+
+<button>
+  <a href="/edit/{{_id}}">Edit profile</a>
+</button>
 
 
-{{#each notas}}
-  <div class="notasGenre">
-    <p>{{this.nombreGrupal}}</p>
-    <p> <img src="{{this.photo}}" alt=""></p>
-    <p>{{this.body}}</p>
-    <p>{{this.generoMusical}}</p>
-    <p>{{this.TipoEvento}}</p>
-    <p>{{this.Telefono}}</p>
-    <p>{{this.CostoMXN}}</p>
+
+  <a href="/create_new">Crear nota ♪</a>
+
+
+
+<div>
+  <h2>Notas ♫</h2>
+  <div class="noteCards">
+    {{#each notas}}
+    <h2>Nombre: {{nombreGrupal}}</h2>
+    <img src="{{photo}}" alt="photo">
+    <p>Descripcion:</p>
+    <p>{{body}}</p>
+    <span>Genero musical: {{generoMusical}}</span> <br>
+     <span>Tipo de evento: {{TipoEvento}}</span>  <br>
+     <span>Costo: {{CostoMXN}}</span> <br>
+     <span>Telefono: {{Telefono}}</span>
+    </p>
+    {{/each}}
   </div>
-{{/each}}
+</div>
 
+<script>
+
+  document.getElementById('photo').addEventListener('click', () => {
+    window.location.href = "/edit_image"
+  })
+
+
+</script>

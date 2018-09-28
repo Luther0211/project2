@@ -1,17 +1,44 @@
-<h1>Log In</h1>
 
-<form action="/login" method="post">
 
-<p>
-  <label for="email">Email</label>
-  <input type="email" name="email" id="emial">
-</p>
 
-<p>
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password">
-</p>
+     <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-grey">Login</h3>
+                    <div class="box">
+                        
+                        <form action="/login" method="post">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-large" type="email" placeholder="Email" autofocus=""  name="email" id="emial">
+                                </div>
+                            </div>
 
-<input type="submit" value="Inicia Session">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-large" type="password" placeholder="Contraseña" name="password" id="password">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="checkbox">
+                  <input type="checkbox">
+                  Remember me
+                </label>
+                            </div>
+                              <input class="button is-block is-info is-large is-fullwidth" type="submit" value="Inicia Session">
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-</form>
+
+            
+
+                
+
+                
+

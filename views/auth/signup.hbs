@@ -1,53 +1,127 @@
-<h1>Sign Up</h1>
-
-<form action="/signup" method="post">
-
-<p>
-  <label for="username">Nombre de Usuario</label>
-  <input type="text" name="username" id="username"  >
-</p>
-
-<p>
-  <label for="email">Correo electronico</label>
-  <input type="email" name="email" id="emial">
-</p>
-
-<p>
-  <label for="password">Contrasena</label>
-  <input type="password" name="password" id="password">
-</p>
+<!DOCTYPE html>
+<html>
 
 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mexa Party</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
 
 
-<!--
-<div id="mexausuario">
-  <br>
-  <br>
-  <p>
-    <label for="nombreGrupal">Nombre de banda/grupo musical</label>
-    <input type="text" name="nombreGrupal" id="nombreGrupal">
-  </p>
+  <body>
 
-  <p>
-    <label for="generoMusical">Genero Musical</label>
-  <select name="generoMusical">
-    <option value="pop">pop</option>
-    <option value="rock">rock</option>
-    <option value="classic">classic</option>
-    <option value="mariachi">mariachi</option>
-    <option value="otro">otro</option>
-  </select>  
-  </p>
+        <div id="barra-lateral">
 
-  <p>
-    <label for="precio">Precio por hora ($MX)</label>
-    <input type="text" name="precio" id="precio">
-  </p>
-</div>
+                <div class="nav-text">
+                    <div class="inicio">
+                            <a class="text-decoration" href="/">Inicio</a> 
+                    </div>
+                
+                    <div class="generos">
+                            <a class="text-decoration" href="/generos">Generos</a> 
+                    </div>
+                
+                    <div class="galeria">
+                            <a class="text-decoration" href="/galeria">Galeria</a> 
+                    </div>
+            
+                    <div class="ingresa">
+                            <a class="text-decoration" href="/login">Ingresa</a> 
+                    </div>
+            
+                    <div class="registro">
+                            <a class="text-decoration" href="/signup">Registro</a> 
+                    </div>
+            
+                    <div class="contacto">
+                            <a class="text-decoration" href="/contacto">Contacto</a> 
+                    </div>
+            
+                    <div class="nosotros">
+                        <a class="text-decoration" href="/nosotros">Nosotros</a> 
+                    </div>
+            
+                </div>
+                <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
+     </div>
 
--->
 
-<input type="submit" value="Crear cuenta">
+     <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title has-text-grey">Signup</h3>
+                    <div class="box">
+                        
+                        <form  action="/signup" method="post">
+                                <div class="field">
+                                        <div class="control">
+                                            <input class="input is-large"  type="text" name="username" id="username" placeholder="Nombre de usuario" autofocus="">
+                                        </div>
+                                    </div>
 
-</form>
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-large"  type="email" name="email" id="emial" placeholder="Email" autofocus="">
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-large" type="password" name="password" id="password" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="checkbox">
+                  
+                            </div>
+                            <input  class="button is-block is-info is-large is-fullwidth" type="submit" value="Registrarme">
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+            
+
+                
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column is-3 is-offset-2">
+                                <h2><strong>Proyecto para</strong></h2>
+                                <ul>
+                                    <li><a href="https://www.ironhack.com/es/campus/mexico-city">IronHack</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="column is-3">
+                                <h2><strong>Hecho por:</strong></h2>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/luther.barragan">Lutter</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="column is-4">
+                                <h2><strong>En colaboración con:</strong></h2>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/JordyAaQ">Jordy</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <script src="../js/bulma.js"></script>
+                </footer>
+
+  </body>
+</html>

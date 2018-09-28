@@ -1,3 +1,38 @@
+        <div id="barra-lateral">
+
+                <div class="nav-text">
+                    <div class="inicio">
+                            <a class="text-decoration" href="/">Inicio</a> 
+                    </div>
+                
+                    <div class="generos">
+                            <a class="text-decoration" href="/generos">Generos</a> 
+                    </div>
+                
+                    <div class="galeria">
+                            <a class="text-decoration" href="/galeria">Galeria</a> 
+                    </div>
+                {{#unless loggedUser}}
+                    <div class="ingresa">
+                            <a class="text-decoration" href="/login">Ingresa</a> 
+                    </div>
+            
+                    <div class="registro">
+                            <a class="text-decoration" href="/signup">Registro</a> 
+                    </div>
+                {{/unless}}
+                    <div class="contacto">
+                            <a class="text-decoration" href="/contacto">Contacto</a> 
+                    </div>
+            
+                    <div class="nosotros">
+                        <a class="text-decoration" href="/nosotros">Nosotros</a> 
+                    </div>
+            
+                </div>
+                <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
+     </div>
+
 <h2>edit photo</h2>
 
 <form action="/edit_image" method="post" enctype="multipart/form-data">

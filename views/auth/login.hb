@@ -33,27 +33,24 @@
                 <img src="https://i.imgur.com/ytDtupJ.png" alt=""> 
      </div>
 
-<h1>GENEROS</h1>
-  
-<ul>
-  <a href="/generos?genre=Rock"><li>Rock</li></a>
-  <a href="/generos?genre=Pop"><li>Pop</li></a>
-  <a href="/generos?genre=Sonidero"><li>Sonidero</li></a>
-  <a href="/generos?genre=Mariachi"><li>Mariachi</li></a>
-  <a href="/generos?genre=Clasica"><li>Clasica</li></a>
-  <a href="/generos?genre=Norteña"><li>Norteña</li></a>
-</ul>
+<h1>Log In</h1>
 
+<form action="/login" method="post">
 
-{{#each notas}}
-  <div class="notasGenre">
-    <p>{{this.nombreGrupal}}</p>
-    <p> <img src="{{this.photo}}" alt=""></p>
-    <p>{{this.body}}</p>
-    <p>{{this.generoMusical}}</p>
-    <p>{{this.TipoEvento}}</p>
-    <p>{{this.Telefono}}</p>
-    <p>{{this.CostoMXN}}</p>
-  </div>
-{{/each}}
+<p>
+  <label for="email">Email</label>
+  <input type="email" name="email" id="emial">
+</p>
 
+<p>
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password">
+</p>
+
+<input type="submit" value="Inicia Session">
+
+<p>No tienes cuenta?
+  Registrate <a href="/signup">aqui!</a>
+</p>
+
+</form>
