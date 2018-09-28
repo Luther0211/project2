@@ -35,29 +35,29 @@
 
 
 <div class="center-middle">
-  <h2>Crear notita</h2>
+  <b>Crear Post</b>
 
 <form action="/create_new" method="post" enctype="multipart/form-data">
 
 <p>
-  <label for="nombreGrupal">Nombre del grupo musical</label>
+  <label for="nombreGrupal">Nombre del grupo musical:</label>
   <input type="text" name="nombreGrupal" id="nombreGrupal" value="{{nombreGrupal}}">
 </p>
 
 <p>
-  <label for="photo">Photo</label>
+  <label for="photo">Foto:</label>
   <input type="file" name="photo" id="photo">
 </p>
 
 <p>
-  <label for="body">Body</label>
+  <label for="body">Descripcion:</label>
   <textarea name="body" id="body" cols="30" rows="10"></textarea>
 </p>
 
 
 <div id="form">
   <p>
-    <label for="generoMusical">Genero musical</label>
+    <label for="generoMusical">Genero musical:</label>
     <select name="generoMusical" id="generoMusical" value="{{generoMusical}}">
       <option value="Rock">Rock</option>
       <option value="Pop">Pop</option>
@@ -69,7 +69,7 @@
   </p> 
 
   <p>
-    <label for="TipoEvento">Tamano de Evento</label>
+    <label for="TipoEvento">Tamaño de Evento:</label>
     <select name="TipoEvento" id="TipoEvento" value="{{TipoEvento}}">
       <option value="Evento-chico">Evento chico</option>
       <option value="Evento-mediano">Evento mediano</option>
@@ -84,12 +84,12 @@
   </p>
 
   <p>
-  <label for="Telefono">Telefono</label>
+  <label for="Telefono">Telefono:</label>
   <input type="text" name="Telefono" id="{{Telefono}}" value="{{Telefono}}">
 </p>
 
 
-<input type="submit" value="Crear notita">
+<input type="submit" value="Crear post">
 
 <button>
     <a href="/profile">Cancel</a>
